@@ -27,6 +27,14 @@ class Dashboard extends StatelessWidget {
       ),
     );
 
+    final buttonLogout = FlatButton(
+      child: Text(
+        'Logout',
+        style: TextStyle(color: Colors.black87, fontSize: 16),
+      ),
+      onPressed: () {},
+    );
+
     // TODO: implement build
     throw UnimplementedError();
   }
