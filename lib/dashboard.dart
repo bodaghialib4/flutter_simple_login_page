@@ -14,6 +14,19 @@ class Dashboard extends StatelessWidget {
       ),
     );
 
+    final description = Padding(
+      padding: EdgeInsets.all(10),
+      child: RichText(
+        textAlign: TextAlign.justify,
+        text: TextSpan(
+          text: 'My name is Ali. '
+              'I am a developer and I love it. '
+              'Learning new scopes related to my profession is enjoyable for me.',
+          style: TextStyle(color: Colors.black, fontSize: 20),
+        ),
+      ),
+    );
+
     // TODO: implement build
     throw UnimplementedError();
   }
