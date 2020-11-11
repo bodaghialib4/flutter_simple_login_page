@@ -44,6 +44,24 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
 
+    final buttonLogin = Padding(
+      padding: EdgeInsets.only(bottom: 5),
+      child: ButtonTheme(
+        height: 56,
+        child: RaisedButton(
+          child: Text(
+            'Login',
+            style: TextStyle(color: Colors.white, fontSize: 20),
+          ),
+          color: Colors.black87,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50.0),
+          ),
+          onPressed: () => {},
+        ),
+      ),
+    );
+
     // TODO: implement build
     throw UnimplementedError();
   }
