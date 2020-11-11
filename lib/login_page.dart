@@ -31,6 +31,19 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
 
+    final inputPassword = Padding(
+      padding: EdgeInsets.only(bottom: 20),
+      child: TextField(
+        keyboardType: TextInputType.text,
+        obscureText: true,
+        decoration: InputDecoration(
+          hintText: 'Password',
+          contentPadding: EdgeInsets.symmetric(horizontal: 25, vertical: 20),
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(50.0)),
+        ),
+      ),
+    );
+
     // TODO: implement build
     throw UnimplementedError();
   }
