@@ -35,7 +35,19 @@ class Dashboard extends StatelessWidget {
       onPressed: () {},
     );
 
-    // TODO: implement build
-    throw UnimplementedError();
+    return SafeArea(
+        child: Scaffold(
+      body: Center(
+        child: ListView(
+          shrinkWrap: true,
+          padding: EdgeInsets.symmetric(horizontal: 20),
+          children: <Widget>[
+            avatar,
+            description,
+            buttonLogout,
+          ],
+        ),
+      ),
+    ));
   }
 }
