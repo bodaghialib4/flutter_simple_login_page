@@ -19,6 +19,18 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
 
+    final inputEmail = Padding(
+      padding: EdgeInsets.only(bottom: 10),
+      child: TextField(
+        keyboardType: TextInputType.emailAddress,
+        decoration: InputDecoration(
+          hintText: 'Email',
+          contentPadding: EdgeInsets.symmetric(horizontal: 25, vertical: 20),
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(50.0)),
+        ),
+      ),
+    );
+
     // TODO: implement build
     throw UnimplementedError();
   }
