@@ -70,7 +70,20 @@ class _LoginPageState extends State<LoginPage> {
       onPressed: null,
     );
 
-    // TODO: implement build
-    throw UnimplementedError();
+    return Scaffold(
+      body: Center(
+        child: ListView(
+          shrinkWrap: true,
+          padding: EdgeInsets.symmetric(horizontal: 20),
+          children: <Widget>[
+            logo,
+            inputEmail,
+            inputPassword,
+            buttonLogin,
+            buttonForgetPassword,
+          ],
+        ),
+      ),
+    );
   }
 }
