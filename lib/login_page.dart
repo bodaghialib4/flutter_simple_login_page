@@ -62,6 +62,14 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
 
+    final buttonForgetPassword = FlatButton(
+      child: Text(
+        "Forget Password",
+        style: TextStyle(color: Colors.grey, fontSize: 16),
+      ),
+      onPressed: null,
+    );
+
     // TODO: implement build
     throw UnimplementedError();
   }
