@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simple_login_page/login_page.dart';
 
 class Dashboard extends StatelessWidget {
   @override
@@ -32,7 +33,10 @@ class Dashboard extends StatelessWidget {
         'Logout',
         style: TextStyle(color: Colors.black87, fontSize: 16),
       ),
-      onPressed: () {},
+      onPressed: () {
+        Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (context) => LoginPage()));
+      },
     );
 
     return SafeArea(
